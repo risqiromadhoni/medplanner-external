@@ -1,0 +1,556 @@
+{
+  "resource": {
+      "resourceType": "Bundle",
+      "type": "batch",
+      "entry": [
+          {
+              "fullUrl": "https://veinscdr.mhnexus.com/baseR4/Organization",
+              "request": {
+                  "method": "PUT",
+                  "url": "Organization/11-05060009"
+              },
+              "resource": {
+                  "resourceType": "Organization",
+                  "id": "11-05060009",
+                  "meta": {
+                      "versionId": "28",
+                      "lastUpdated": "2024-10-07T12:01:39.528+08:00",
+                      "source": "http://provider.hie.moh.gov.my#yItRtWFksdIemjdO",
+                      "profile": [
+                          "http://fhir.hie.moh.gov.my/StructureDefinition/Organization-my-core"
+                      ]
+                  },
+                  "identifier": [
+                      {
+                          "system": "http://fhir.hie.moh.gov.my/sid/organization-id",
+                          "value": "11-05060009"
+                      }
+                  ],
+                  "active": true,
+                  "name": "Hospital Tuanku Ja'afar, Seremban",
+                  "alias": [
+                      "Hosp. Tuanku Ja'afar, Seremban"
+                  ],
+                  "telecom": [
+                      {
+                          "system": "phone",
+                          "value": "067625771",
+                          "use": "work"
+                      },
+                      {
+                          "system": "email",
+                          "value": "hpdgovt@tm.net.my"
+                      },
+                      {
+                          "system": "fax",
+                          "value": "067625771"
+                      }
+                  ],
+                  "address": [
+                      {
+                          "extension": [
+                              {
+                                  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-state-my-core",
+                                  "valueCodeableConcept": {
+                                      "coding": [
+                                          {
+                                              "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+                                              "code": "05",
+                                              "display": "Negeri Sembilan"
+                                          }
+                                      ]
+                                  }
+                              },
+                              {
+                                  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-district-my-core",
+                                  "valueCodeableConcept": {
+                                      "coding": [
+                                          {
+                                              "system": "http://fhir.hie.moh.gov.my/CodeSystem/district-my-core",
+                                              "version": "1.0.0",
+                                              "code": "0505",
+                                              "display": "Seremban"
+                                          }
+                                      ]
+                                  }
+                              }
+                          ],
+                          "line": [
+                              "Jalan Rasah"
+                          ],
+                          "city": "Seremban",
+                          "state": "Negeri Sembilan",
+                          "postalCode": "70300",
+                          "country": "MYS"
+                      }
+                  ]
+              }
+          },
+          {
+              "fullUrl": "https://veinscdr.mhnexus.com/baseR4/Patient",
+              "request": {
+                  "method": "PUT",
+                  "url": "Patient/c3a76cf7-5952-42c4-8ec7-f1a182e3f6c2"
+              },
+              "resource": {
+                  "resourceType": "Patient",
+                  "id": "c3a76cf7-5952-42c4-8ec7-f1a182e3f6c2",
+                  "meta": {
+                      "versionId": "2",
+                      "lastUpdated": "2024-11-12T08:04:18.513+08:00",
+                      "source": "http://provider.hie.moh.gov.my",
+                      "profile": [
+                          "http://fhir.hie.moh.gov.my/StructureDefinition/Patient-my-core"
+                      ]
+                  },
+                  "identifier": [
+                      {
+                          "use": "official",
+                          "system": "http://fhir.hie.moh.gov.my/sid/my-kad-no",
+                          "value": "001005146673"
+                      },
+                      {
+                          "system": "http://fhir.hie.moh.gov.my/sid/patient-mrn",
+                          "value": "HIE-00001407"
+                      }
+                  ],
+                  "active": true,
+                  "name": [
+                      {
+                          "use": "official",
+                          "text": "LAURA MILLY",
+                          "given": [
+                              "LAURA MILLY"
+                          ]
+                      }
+                  ],
+                  "telecom": [
+                      {
+                          "system": "phone",
+                          "value": "01156444325",
+                          "use": "mobile"
+                      },
+                      {
+                          "system": "email",
+                          "value": "laura@gmail.com",
+                          "use": "mobile"
+                      }
+                  ],
+                  "gender": "female",
+                  "birthDate": "2000-10-05",
+                  "deceasedBoolean": false,
+                  "address": [
+                      {
+                          "extension": [
+                              {
+                                  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-district-my-core",
+                                  "valueCodeableConcept": {
+                                      "coding": [
+                                          {
+                                              "system": "http://fhir.hie.moh.gov.my/CodeSystem/district-my-core",
+                                              "code": "1008",
+                                              "display": "Ulu Langat"
+                                          }
+                                      ]
+                                  }
+                              },
+                              {
+                                  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-state-my-core",
+                                  "valueCodeableConcept": {
+                                      "coding": [
+                                          {
+                                              "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+                                              "code": "10",
+                                              "display": "Selangor"
+                                          }
+                                      ]
+                                  }
+                              }
+                          ],
+                          "line": [
+                              "NO 58 JALAN SARI ILMU  1/4"
+                          ],
+                          "city": "KAJANG",
+                          "postalCode": "43000",
+                          "country": "MYS"
+                      }
+                  ],
+                  "maritalStatus": {
+                      "coding": [
+                          {
+                              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                              "code": "M",
+                              "display": "Married"
+                          }
+                      ]
+                  },
+                  "managingOrganization": {
+                      "reference": "Organization/11-05060009"
+                  }
+              }
+          },
+          {
+              "fullUrl": "https://veinscdr.mhnexus.com/baseR4/Practitioner",
+              "request": {
+                  "method": "PUT",
+                  "url": "Practitioner/877b4890-4304-4a56-9cc4-78bbe2c7c62e"
+              },
+              "resource": {
+                  "resourceType": "Practitioner",
+                  "id": "877b4890-4304-4a56-9cc4-78bbe2c7c62e",
+                  "meta": {
+                      "versionId": "5",
+                      "lastUpdated": "2024-11-14T12:34:41.508+08:00",
+                      "source": "http://provider.hie.moh.gov.my",
+                      "profile": [
+                          "http://fhir.hie.moh.gov.my/StructureDefinition/Practitioner-my-core"
+                      ]
+                  },
+                  "identifier": [
+                      {
+                          "system": "http://fhir.hie.moh.gov.my/sid/professional-no",
+                          "value": "3006"
+                      },
+                      {
+                          "system": "http://fhir.hie.moh.gov.my/sid/my-kad-no",
+                          "value": "980630115424"
+                      }
+                  ],
+                  "active": true,
+                  "name": [
+                      {
+                          "text": "SYAZA NUR IZZATI"
+                      }
+                  ],
+                  "telecom": [
+                      {
+                          "system": "phone",
+                          "value": "0148067823",
+                          "use": "work"
+                      },
+                      {
+                          "system": "email",
+                          "value": "syazanurizzatii@gmail.com",
+                          "use": "work"
+                      }
+                  ],
+                  "address": [
+                      {
+                          "extension": [
+                              {
+                                  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-district-my-core",
+                                  "valueCodeableConcept": {
+                                      "coding": [
+                                          {
+                                              "system": "http://fhir.hie.moh.gov.my/CodeSystem/district-my-core",
+                                              "code": "1102",
+                                              "display": "Dungun"
+                                          }
+                                      ]
+                                  }
+                              },
+                              {
+                                  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-state-my-core",
+                                  "valueCodeableConcept": {
+                                      "coding": [
+                                          {
+                                              "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+                                              "code": "11",
+                                              "display": "Terengganu"
+                                          }
+                                      ]
+                                  }
+                              }
+                          ],
+                          "line": [
+                              "LOT 10973, HADAPAN TAMAN RAYA, JALAN BUNGA RAYA"
+                          ],
+                          "city": "DUNGUN",
+                          "postalCode": "23000",
+                          "country": "MYS"
+                      }
+                  ],
+                  "gender": "female",
+                  "birthDate": "1998-06-30"
+              }
+          },
+          {
+              "fullUrl": "https://veinscdr.mhnexus.com/baseR4/Practitioner",
+              "request": {
+                  "method": "PUT",
+                  "url": "Practitioner/aa36183e-13c9-4faf-a01d-b0b076d09292"
+              },
+              "resource": {
+                  "resourceType": "Practitioner",
+                  "id": "aa36183e-13c9-4faf-a01d-b0b076d09292",
+                  "meta": {
+                      "versionId": "1",
+                      "lastUpdated": "2024-11-06T10:34:07.910+08:00",
+                      "source": "http://provider.hie.moh.gov.my",
+                      "profile": [
+                          "http://fhir.hie.moh.gov.my/StructureDefinition/Practitioner-my-core"
+                      ]
+                  },
+                  "identifier": [
+                      {
+                          "system": "http://fhir.hie.moh.gov.my/sid/professional-no",
+                          "value": "000930050144"
+                      },
+                      {
+                          "system": "http://fhir.hie.moh.gov.my/sid/my-kad-no",
+                          "value": "000930050144"
+                      }
+                  ],
+                  "active": true,
+                  "name": [
+                      {
+                          "text": "NURNAZIHAH BT ABU HASSAN"
+                      }
+                  ],
+                  "telecom": [
+                      {
+                          "system": "phone",
+                          "use": "work"
+                      },
+                      {
+                          "system": "email",
+                          "value": "nurnazihah.ahassan@gmail.com",
+                          "use": "work"
+                      }
+                  ],
+                  "address": [
+                      {
+                          "country": "MYS"
+                      }
+                  ],
+                  "gender": "female",
+                  "birthDate": "2000-09-30"
+              }
+          },
+          {
+              "fullUrl": "https://veinscdr.mhnexus.com/baseR4/Practitioner",
+              "request": {
+                  "method": "PUT",
+                  "url": "Practitioner/27f782b2-6b53-4df2-b2e7-fb5618abffb8"
+              },
+              "resource": {
+                  "resourceType": "Practitioner",
+                  "id": "27f782b2-6b53-4df2-b2e7-fb5618abffb8",
+                  "meta": {
+                      "versionId": "1",
+                      "lastUpdated": "2023-11-01T09:53:17.421+08:00",
+                      "source": "http://provider.hie.moh.gov.my",
+                      "profile": [
+                          "http://fhir.hie.moh.gov.my/StructureDefinition/Practitioner-my-core"
+                      ]
+                  },
+                  "identifier": [
+                      {
+                          "system": "http://fhir.hie.moh.gov.my/sid/professional-no",
+                          "value": "1122559"
+                      },
+                      {
+                          "system": "http://fhir.hie.moh.gov.my/sid/my-kad-no",
+                          "value": "951223065359"
+                      }
+                  ],
+                  "active": true,
+                  "name": [
+                      {
+                          "text": "SUFIAN BIN IDRIS"
+                      }
+                  ],
+                  "telecom": [
+                      {
+                          "system": "phone",
+                          "use": "work"
+                      },
+                      {
+                          "system": "email",
+                          "value": "sufian@mhnexus.com",
+                          "use": "work"
+                      }
+                  ],
+                  "address": [
+                      {
+                          "country": "MYS"
+                      }
+                  ],
+                  "gender": "male",
+                  "birthDate": "1995-12-23"
+              }
+          },
+          {
+              "fullUrl": "https://veinscdr.mhnexus.com/baseR4/Encounter",
+              "request": {
+                  "method": "PUT",
+                  "url": "Encounter/cbb3cd82-3797-4f8e-9703-d357bf295a30"
+              },
+              "resource": {
+                  "resourceType": "Encounter",
+                  "id": "cbb3cd82-3797-4f8e-9703-d357bf295a30",
+                  "meta": {
+                      "versionId": "1",
+                      "lastUpdated": "2024-11-21T13:42:55.217+08:00",
+                      "source": "http://provider.hie.moh.gov.my#QAgu3U49zKDGvm0B",
+                      "profile": [
+                          "http://fhir.hie.moh.gov.my/StructureDefinition/Encounter-my-core"
+                      ]
+                  },
+                  "identifier": [
+                      {
+                          "system": "http://fhir.hie.moh.gov.my/sid/encounter-id",
+                          "value": "HTJ-ENC-2411000146"
+                      }
+                  ],
+                  "status": "arrived",
+                  "class": {
+                      "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+                      "version": "1.0.0",
+                      "code": "AMB",
+                      "display": "Outpatient"
+                  },
+                  "type": [
+                      {
+                          "coding": [
+                              {
+                                  "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+                                  "code": "02",
+                                  "display": "General Medicine"
+                              }
+                          ]
+                      }
+                  ],
+                  "serviceType": {
+                      "coding": [
+                          {
+                              "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+                              "code": "03",
+                              "display": "Outpatient"
+                          }
+                      ]
+                  },
+                  "priority": {
+                      "coding": [
+                          {
+                              "system": "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+                              "version": "2018-08-12",
+                              "code": "R",
+                              "display": "Routine"
+                          }
+                      ]
+                  },
+                  "subject": {
+                      "reference": "Patient/c3a76cf7-5952-42c4-8ec7-f1a182e3f6c2"
+                  },
+                  "period": {
+                      "start": "2024-11-21T13:42:39+08:00"
+                  },
+                  "hospitalization": {
+                      "admitSource": {
+                          "coding": [
+                              {
+                                  "system": "http://fhir.hie.moh.gov.my/CodeSystem/external-referral-source-type-my-core",
+                                  "version": "1.0.0",
+                                  "code": "99",
+                                  "display": "Others (walk-in)"
+                              }
+                          ]
+                      }
+                  },
+                  "serviceProvider": {
+                      "reference": "Organization/11-05060009"
+                  }
+              }
+          },
+          {
+              "fullUrl": "https://veinscdr.mhnexus.com/baseR4/Group",
+              "request": {
+                  "method": "POST",
+                  "url": "Group"
+              },
+              "resource": {
+                  "resourceType": "Group",
+                  "id": "group-sample",
+                  "meta": {
+                      "versionId": "1",
+                      "lastUpdated": "2024-11-12T08:04:18.513+08:00",
+                      "source": "http://provider.hie.moh.gov.my"
+                  },
+                  "active": true,
+                  "type": "person",
+                  "actual": true,
+                  "code": {
+                      "coding": [
+                          {
+                              "code": "medplanner"
+                          }
+                      ]
+                  },
+                  "name": "LAURA MILLY (001005146673)",
+                  "quantity": 3,
+                  "managingEntity": {
+                      "reference": "Organization/11-05060009",
+                      "display": "HOSPITAL TUANKU JA'AFAR"
+                  },
+                  "characteristic": [
+                      {
+                          "code": {
+                              "coding": [
+                                  {
+                                      "code": "patient",
+                                      "display": "Related Patient"
+                                  }
+                              ]
+                          },
+                          "valueReference": {
+                              "reference": "Patient/c3a76cf7-5952-42c4-8ec7-f1a182e3f6c2"
+                          },
+                          "period": {
+                              "start": "2024-11-12T08:04:18+08:00"
+                          },
+                          "exclude": false
+                      },
+                      {
+                          "code": {
+                              "coding": [
+                                  {
+                                      "code": "encounter",
+                                      "display": "Related Encounter"
+                                  }
+                              ]
+                          },
+                          "valueReference": {
+                              "reference": "Encounter/cbb3cd82-3797-4f8e-9703-d357bf295a30"
+                          },
+                          "period": {
+                              "start": "2024-11-12T08:04:18+08:00"
+                          },
+                          "exclude": false
+                      }
+                  ],
+                  "member": [
+                      {
+                          "entity": {
+                              "reference": "Practitioner/aa36183e-13c9-4faf-a01d-b0b076d09292"
+                          },
+                          "inactive": false
+                      },
+                      {
+                          "entity": {
+                              "reference": "Practitioner/877b4890-4304-4a56-9cc4-78bbe2c7c62e"
+                          },
+                          "inactive": false
+                      },
+                      {
+                          "entity": {
+                              "reference": "Practitioner/27f782b2-6b53-4df2-b2e7-fb5618abffb8"
+                          },
+                          "inactive": true
+                      }
+                  ]
+              }
+          }
+      ]
+  }
+}

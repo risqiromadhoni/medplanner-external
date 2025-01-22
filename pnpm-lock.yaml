@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      json-edit-react:
+        specifier: ^1.19.2
+        version: 1.19.2(react@19.0.0)
       next:
         specifier: 15.1.5
         version: 15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -440,6 +443,11 @@ packages:
     resolution: {integrity: sha512-/imKNG4EbWNrVjoNC/1H5/9GFy+tqjGBHCaSsN+P2RnPqjsLmv6UD3Ej+Kj8nBWaRAwyk7kK5ZUc+OEatnTR3A==}
     hasBin: true
 
+  json-edit-react@1.19.2:
+    resolution: {integrity: sha512-C4c2t+TtG5/LPkJWGOriF8Cm6geSN5GF02ybLpPlO7qQZFuHftq4ClYh63KorhZ5uDXwjSDGjh1B9hhV4nbdBA==}
+    peerDependencies:
+      react: '>=16.0.0'
+
   lilconfig@3.1.3:
     resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
     engines: {node: '>=14'}
@@ -506,6 +514,12 @@ packages:
   object-hash@3.0.0:
     resolution: {integrity: sha512-RSn9F68PjH9HqtltsSnqYC1XXoWe9Bju5+213R98cNGttag9q9yAOTzdbsqvIa7aNm5WffBZFpWYr2aWrklWAw==}
     engines: {node: '>= 6'}
+
+  object-property-assigner@1.3.5:
+    resolution: {integrity: sha512-DIzHzNSTnpoG8QPQCDNrHa6O3vLMhktK3Igirqpk523UYIVe8JNCKcn5C9WyLQxJc58EGsAIiiEu10gqPrud8w==}
+
+  object-property-extractor@1.0.13:
+    resolution: {integrity: sha512-9kgEjTWDhTPuPn7nyof+5mLmCKBPKdU0c7IVpTbOvYKYSdXQ5skH4Pa/8MPbZXeyXBGrqS82JyWecsh6tMxiLw==}
 
   package-json-from-dist@1.0.1:
     resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
@@ -1079,6 +1093,12 @@ snapshots:
 
   jiti@1.21.7: {}
 
+  json-edit-react@1.19.2(react@19.0.0):
+    dependencies:
+      object-property-assigner: 1.3.5
+      object-property-extractor: 1.0.13
+      react: 19.0.0
+
   lilconfig@3.1.3: {}
 
   lines-and-columns@1.2.4: {}
@@ -1136,6 +1156,10 @@ snapshots:
   object-assign@4.1.1: {}
 
   object-hash@3.0.0: {}
+
+  object-property-assigner@1.3.5: {}
+
+  object-property-extractor@1.0.13: {}
 
   package-json-from-dist@1.0.1: {}
 
