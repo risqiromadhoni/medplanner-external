@@ -1,8 +1,9 @@
 "use client";
-import { JsonEditor } from "json-edit-react";
-import Image from "next/image";
+import dynamic from 'next/dynamic';
 import BUNDLE_PAYLOAD from './payload.json'
 import { useState } from "react";
+
+const JsonEditor = dynamic(() => import('json-edit-react').then((mod) => mod.JsonEditor), { ssr: false });
 
 interface BundlesResponse {
   messages: string;
