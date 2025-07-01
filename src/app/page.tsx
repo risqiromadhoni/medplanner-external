@@ -32,7 +32,11 @@ export default function Home() {
     setIsLoading(true);
     const response = await sendReqBundles(jsonData, authToken);
     if (response.redirect_url) {
-      window.open(response.redirect_url, "_blank");
+      let redirectUrl = response.redirect_url;
+      if (process.env.NODE_ENV === "development") {
+        redirectUrl = redirectUrl.replace("https://app.staging.medplanner.io", "http://localhost:5173")
+      }
+      window.open(redirectUrl.toString(), "_blank");
     }
     setIsLoading(false);
     return response;
